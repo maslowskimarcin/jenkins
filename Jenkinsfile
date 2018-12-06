@@ -11,11 +11,9 @@ stages{
                 sh 'bash ./run_tests.sh'
             }
             post {
-                success {
-                    
                     junit 'results.xml'
 
-                }
+
             }
         }
 
