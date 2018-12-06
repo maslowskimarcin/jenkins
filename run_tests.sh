@@ -8,4 +8,10 @@ else
 fi
 python3 -m pytest --junitxml results.xml tests.py
 
-exit 0
+OUTPUT="$(python3 read_xml.py 2>&1 > /dev/null)"
+
+if [ $OUTPUT -eq 0]
+then
+    exit 0
+else
+    exit $OUTPUT
