@@ -6,4 +6,4 @@ then
 else
     pip3 install --upgrade --user pytest
 fi
-python3 -m pytest --junitxml results.xml /home/maslo/tests.py
+python3 -m pytest --junitxml results.xml tests.py
