@@ -12,7 +12,7 @@ class SimpleTest(unittest.TestCase):
 
     def test_pass(self):
         print("AD")
-        self.assertEqual(10,7+3)
+        self.assertEqual(11,7+3)
     
     def test_fail(self):
         self.assertEqual(10,7+3)
