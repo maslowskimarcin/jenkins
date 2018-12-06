@@ -3,12 +3,12 @@ pipeline {
 stages{
         stage('Build'){
             steps {
-                sh 'run_script.sh'
+                sh './run_script.sh'
             }
         }
         stage('Tests'){
             steps {
-                sh 'run_tests.sh'
+                sh './run_tests.sh'
             }
             post {
                 success {
