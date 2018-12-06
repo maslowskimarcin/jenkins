@@ -12,7 +12,7 @@ OUTPUT="$(python3 read_xml.py 2>&1 > /dev/null)"
 
 if [ $OUTPUT -gt 1 ]
 then
-    exit 0
-else
     exit $OUTPUT
+else
+    exit 0
 fi
