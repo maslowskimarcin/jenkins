@@ -11,7 +11,10 @@ stages{
                 sh 'bash ./run_tests.sh'
             }
             post {
-                    junit 'results.xml'
+            always{
+                junit 'results.xml'
+            }
+
 
 
             }
