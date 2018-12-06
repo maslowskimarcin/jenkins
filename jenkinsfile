@@ -19,7 +19,7 @@ stages{
                     junit 'results.xml'
 
                 }
-            }
+            } 
         }
 
     }
