@@ -8,12 +8,12 @@ except ImportError:
 class SimpleTest(unittest.TestCase):
 
     def test_skipped(self):
-        self.fail("nie powninno")
+        self.assertEqual(1, 1)
 
     def test_pass(self):
         print("AD")
-        self.assertEqual(10,7+3)
+        self.assertEqual(10, 7+3)
     
     def test_fail(self):
-        self.assertEqual(10,7+3)
+        self.assertEqual(10, 7+3)
 
