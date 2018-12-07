@@ -6,7 +6,7 @@ except ImportError:
     import unittest
     
 class SimpleTest(unittest.TestCase):
-    @unittest.skip("SKIPPED")
+
     def test_skipped(self):
         self.fail("nie powninno")
 
